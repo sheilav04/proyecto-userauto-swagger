@@ -1,0 +1,1284 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/users": {
+      "post": {
+        "operationId": "UsersController_createUser",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "get": {
+        "operationId": "UsersController_getUsers",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "operationId": "UsersController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "UsersController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "UsersController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/roles": {
+      "post": {
+        "operationId": "RolesController_createUser",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRoleDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Roles"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "get": {
+        "operationId": "RolesController_getRoles",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Roles"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/roles/{id}": {
+      "get": {
+        "operationId": "RolesController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Roles"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "RolesController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRoleDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Roles"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "RolesController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Roles"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/paises": {
+      "post": {
+        "operationId": "PaisesController_createPaise",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePaiseDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Paises"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "get": {
+        "operationId": "PaisesController_getPaises",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Paises"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/paises/{id}": {
+      "get": {
+        "operationId": "PaisesController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Paises"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "PaisesController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePaiseDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Paises"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "PaisesController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Paises"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/marcas": {
+      "post": {
+        "operationId": "MarcasController_createMarca",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMarcaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marcas"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "get": {
+        "operationId": "MarcasController_getMarcas",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marcas"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/marcas/{id}": {
+      "get": {
+        "operationId": "MarcasController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marcas"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "MarcasController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMarcaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marcas"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "MarcasController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Marcas"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/lenguajes": {
+      "post": {
+        "operationId": "LenguajesController_createLenguaje",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLenguajeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguajes"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "get": {
+        "operationId": "LenguajesController_getLenguajes",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguajes"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/lenguajes/{id}": {
+      "get": {
+        "operationId": "LenguajesController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguajes"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "LenguajesController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLenguajeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguajes"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "LenguajesController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Lenguajes"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/autos": {
+      "post": {
+        "operationId": "AutosController_createAuto",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAutoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Autos"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "get": {
+        "operationId": "AutosController_getAutos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Autos"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/autos/{id}": {
+      "get": {
+        "operationId": "AutosController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Autos"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "patch": {
+        "operationId": "AutosController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateAutoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Autos"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "AutosController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Autos"
+        ],
+        "security": [
+          {
+            "bearer": []
+          }
+        ]
+      }
+    },
+    "/localidades": {
+      "post": {
+        "operationId": "LocalidadesController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLocalidadeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        }
+      },
+      "get": {
+        "operationId": "LocalidadesController_getLocalidad",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/localidades/{id}": {
+      "get": {
+        "operationId": "LocalidadesController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "patch": {
+        "operationId": "LocalidadesController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLocalidadeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "operationId": "LocalidadesController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/provincias": {
+      "post": {
+        "operationId": "ProvinciasController_createProvincia",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProvinciaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        }
+      },
+      "get": {
+        "operationId": "ProvinciasController_getProvincias",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/provincias/{id}": {
+      "get": {
+        "operationId": "ProvinciasController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "patch": {
+        "operationId": "ProvinciasController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProvinciaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "operationId": "ProvinciasController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/provincia-localidad": {
+      "post": {
+        "operationId": "ProvinciaLocalidadController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProvinciaLocalidadDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        }
+      },
+      "get": {
+        "operationId": "ProvinciaLocalidadController_findAll",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/provincia-localidad/{id}": {
+      "get": {
+        "operationId": "ProvinciaLocalidadController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "patch": {
+        "operationId": "ProvinciaLocalidadController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProvinciaLocalidadDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "operationId": "ProvinciaLocalidadController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "info": {
+    "title": "Proyecto Users y Autos",
+    "description": "Users & Autos API",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [],
+  "components": {
+    "securitySchemes": {
+      "bearer": {
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "type": "http"
+      }
+    },
+    "schemas": {
+      "CreateUserDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          },
+          "apellido": {
+            "type": "string"
+          },
+          "dni": {
+            "type": "number"
+          },
+          "direccion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nombre",
+          "apellido",
+          "dni",
+          "direccion"
+        ]
+      },
+      "UpdateUserDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateRoleDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nombre"
+        ]
+      },
+      "UpdateRoleDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreatePaiseDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nombre"
+        ]
+      },
+      "UpdatePaiseDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateMarcaDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nombre"
+        ]
+      },
+      "UpdateMarcaDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateLenguajeDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nombre"
+        ]
+      },
+      "UpdateLenguajeDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateAutoDto": {
+        "type": "object",
+        "properties": {
+          "modelo": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "patente": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "modelo",
+          "color",
+          "patente"
+        ]
+      },
+      "UpdateAutoDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "CreateLocalidadeDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nombre"
+        ]
+      },
+      "UpdateLocalidadeDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateProvinciaDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nombre"
+        ]
+      },
+      "UpdateProvinciaDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string"
+          }
+        }
+      },
+      "CreateProvinciaLocalidadDto": {
+        "type": "object",
+        "properties": {}
+      },
+      "UpdateProvinciaLocalidadDto": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+}
